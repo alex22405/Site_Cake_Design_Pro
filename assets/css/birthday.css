@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    position: relative;
+    overflow-x: hidden;
+}
+.logo-div
+{
+    position: relative;
+    right: 5vw;
+}
+.logo
+{
+    max-height: 75px;
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 75px;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: pink;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+header.sticky .navigation li a
+{
+    color: #111;
+}
+header .navigation li a:hover
+{
+    color: #ff0157;
+}
+.title
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+.banner
+{
+    height: 45vw;
+    color: peachpuff;
+    background: url(../img/banner_05.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.fst-letter
+{
+    color: #ff0157;
+}
+.btn
+{
+    font-size: 1em;
+    color: white;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: large;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    transition: 0.5s;
+} 
+.btn:hover
+{
+    transition: 0.3s ease-in-out;
+    letter-spacing: 6px;
+}
+.menu .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+.menu .content .box
+{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid white;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.menu .content .box .imgBx
+{
+    width: 100%;
+}
+.menu .content .box .text
+{
+    padding: 15px 0 5px;
+}
+.menu .content .box .text h3
+{
+    font-weight: 400;
+    color: #111;
+}
+
+.imgBx
+{
+    width: 400px;
+}
+img
+{
+    width: 100%;
+}
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titleText
+{
+    color: #111;
+    font-size: 1em;
+    font-weight: 300;
+}
+.titleText span
+{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.contact
+{
+    background-color: pink;
+}
+.contact .title h2
+{
+    padding: 50px 0 0;
+}
+.contact p
+{
+    font-size: medium;
+}
+.contactForm
+{
+    padding: 75px 50px;
+    background: pink;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactForm h3
+{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input
+{
+    width: 100%;
+    border: 1px solid #111;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    border: 1px solid #111;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"]
+{
+    background: #ff0157;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width:991px)
+{
+    header, header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background: linear-gradient(90deg, rgba(209,73,133,1) 0%, rgba(231,209,209,1) 100%);
+    }
+    header .navigation li
+    {
+        margin-left: 0;
+    }
+    header .navigation li a 
+    {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300t;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../img/icon-menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url(..//img/croix-icon.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+}

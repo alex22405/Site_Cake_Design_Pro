@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/accueil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Serif:wght@700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="assets/img/logo.png">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Partie cake design -->
+    <header>
+            <div class="logo-div">
+               <a href="#banner"><img class="logo" src="assets/img/logo.svg" alt=""></a>
+            </div>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li>
+                    <a href="#banner" onclick="toggleMenu();">Accueil</a>
+                </li>
+                <li>
+                    <a href="#about" onclick="toggleMenu();">Notre mission</a>
+                </li>
+                <li>
+                    <a href="#menu" onclick="toggleMenu();">
+                        Nos produits
+                        <!-- <ul>
+                            <li><a href="index2.html">Mariage</a></li>
+                            <li><a href="#">Anniversaire</a></li>
+                            <li><a href="#">Pâtisserie</a></li>
+                            <li><a href="#">Boulangerie</a></li>
+                        </ul> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" onclick="toggleMenu();">Contact</a>
+                </li>
+            </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <div>
+                <h2><span>Les </span><span>Merveilles </span><span>de </span><span>Diane</span></h2>
+            </div>
+            <div class="slogan">
+                <p><span>Le goût de l'exceptionnel,</span> <span>une sensation familière à découvrir.</span></p>
+            </div>
+            <!-- <a href="#menu" class="btn">Consulter la carte</a> -->
+        </div>
+    </section>
+
+    
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>N</span>otre mission</h2>
+                <p>Notre mission est de vous offrir des créations sucrées uniques, qui marqueront tous vos événements importants. Nous mettons notre expertise, notre passion et notre savoir-faire à votre service pour vous proposer des gâteaux, des pâtisseries et des wedding cakes d'exception, réalisés sur mesure et avec les meilleurs ingrédients. Nous sommes fiers de faire partie de vos moments de bonheur et de contribuer à les rendre inoubliables. Bienvenue dans l'univers gourmand des <strong>Merveilles de Diane</strong>.</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img class="cadre" src="assets/img/birthday_02.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <div class="log">
+        <img src="assets/img/logo.svg" alt="">
+    </div>
+    <section class="menu" id="menu">
+            <div class="title">
+                <h2 class="titleText"><span>V</span>os <span>D</span>élices <span>S</span>ucrés</h2>
+                <p>Je suis souvent associé à la fête et aux moments de convivialité, je peux être rond ou carré, petit ou grand. Les uns me préfèrent glacé, les autres croustillant, mais tous me trouvent délicieux. Qui suis-je ?</p>
+            </div>
+            <div class="content flotte">
+                <div class="box">
+                    <div class="imgBx">
+                        <img class="flotte_image" src="assets/img/wedding_02.png" alt="">
+                    </div>
+                    <div class="text">
+                        <a class="btn1" href="wedding.html">Gâteau de mariage</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="assets/img/birthday_03.png" alt="">
+                    </div>
+                    <div class="text">
+                        <a class="btn1" href="birthday.html">Gâteau d'anniversaire</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img class="patisserie_01" src="assets/img/patisserie_01.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <a class="btn1" href="patisserie.html">Pâtisserie</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="assets/img/Illustration_11.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <a class="btn1" href="boulangerie.html">Boulangerie</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontactez-nous</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum reiciendis amet adipisci ducimus autem beatae libero dolor ipsa voluptatum in.</p>
+        </div>
+        <div class="contactForm">
+            <h3>Envoyez un message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Nom">
+            </div>        
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>        
+            <div class="inputBox">
+                <textarea placeholder="Saisissez votre message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" placeholder="Envoyez">
+            </div>          
+        </div>
+    </section>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
