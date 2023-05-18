@@ -12,94 +12,19 @@ body
     position: relative;
     overflow-x: hidden;
 }
-.logo-div
+
+/* ------------- NAVBAR -------------- */
+
+.logo
 {
     position: relative;
     right: 5vw;
 }
-.logo
+.logo_img
 {
     max-height: 75px;
 }
-hr
-{
-    opacity: 20%;
-    color: pink;
-}
-.log
-{
-    display: flex;
-    justify-content: center;
-}
-.log img
-{
-    width: 400px;
-}
-p
-{
-    font-weight: 300;
-    color: #111;
-}
-.banner
-{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../img/banniere.jpg);
-    background-size: cover;
-    background-position: bottom;
-}
-.banner .content
-{
-    max-width: 900px;
-    text-align: center;
-}
-.banner .content h2
-{
-    font-size: 4.7em;
-    font-family: 'PT Serif', serif;
-    color: pink;
-    text-shadow: #ff0157 3px 3px 20px;
-}
-.banner .content p
-{
-    font-size: 1.1em;
-    color: black;
-    /* font-family: 'Lobster', cursive; */
-    font-weight: bold;
-}
-.banner .content .a
-{
-    position: relative;
-}
-.slogan
-{
-    position: relative;
-    top: 240px;
-}
-.btn
-{
-    font-size: 1em;
-    color: white;
-    background: #ff0157;
-    display: inline-block;
-    padding: 10px 30px;
-    margin-top: 20px;
-    font-size: large;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    position: relative;
-    transition: 0.5s;
-} 
-.btn:hover
-{
-    transition: 0.3s ease-in-out;
-    letter-spacing: 6px;
-}
+
 header
 {
     position: fixed;
@@ -148,28 +73,79 @@ header .navigation li a:hover
 {
     color: #ff0157;
 }
+
+/* ------------- BANNIERE -------------- */
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/banniere.png);
+    background-size: cover;
+    background-position: bottom;
+}
+.banner_content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.banner_content_title
+{
+    font-size: 4.7em;
+    font-family: 'PT Serif', serif;
+    color: pink;
+    text-shadow: #ff0157 3px 3px 20px;
+}
+.banner_content_slogan
+{
+    position: relative;
+    top: 240px;
+}
+.banner_content_slogan_text
+{
+    font-size: 1.1em;
+    color: black;
+    font-weight: bold;
+}
+
 section{
-    padding: 60px;
+    padding: 75px;
 }
 
 
-.row
+/* ------------- NOTRE MISSION -------------- */
+
+.mission_div
 {
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.row .col50
+.mission_div_col50
 {
     position: relative;
-    width: 48%;
+    width: 47%;
 }
+.mission_img_cadre
+{
+    border: 10px solid black;
+    box-shadow: 10px 10px 10px grey;
+}
+
+/* ----------------COMMUN---------------- */
+/* --TITRE DES SECTIONS "MISSION & MENU"-- */
 .titleText
 {
     color: #111;
     font-size: 2em;
     font-weight: 300;
+    font-family: 'Lobster', cursive;
+
 }
 .titleText span
 {
@@ -177,6 +153,12 @@ section{
     font-weight: 700;
     font-size: 1.5em;
 }
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+/* --IMG DES SECTIONS "MISSION & MENU"-- */
 .imgBx
 {
     width: 400px;
@@ -185,16 +167,16 @@ img
 {
     width: 100%;
 }
-.cadre
+/* ------------------------------------- */
+
+
+/* ----------------MENU---------------- */
+
+.menu
 {
-    border: 10px solid black;
-    box-shadow: 10px 10px 10px grey;
+    margin-top: -60px;
 }
-.patisserie_01
-{
-    height: 49vh;
-}
-.title
+.menu_banner
 {
     width: 100%;
     display: flex;
@@ -202,46 +184,23 @@ img
     align-items: center;
     flex-direction: column;
 }
-.menu
-{
-    margin-top: -60px;
-}
-.menu .content
+.menu_content
 {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     margin-top: 15px;
 }
-.menu .title p
-{
-    /* font-family: 'Lobster', cursive; */
-    font-size: large;
-}
-.menu .content .box
+
+.menu_content_box
 {
     width: 340px;
     margin: 20px;
     border: 15px solid white;
     box-shadow: 0 5px 35px rgba(0,0,0,0.08);
 }
-.menu .content .box .imgBx
+.menu_content_box .imgBx
 {
     width: 100%;
-}
-.menu .content .box .text
-{
-    padding: 15px 0 5px;
-    font-family: 'Ubuntu', sans-serif;
-}
-.menu .content .box .text h3
-{
-    font-weight: 400;
-    color: #111;
-}
-.titleText
-{
-    font-family: 'Lobster', cursive;
 }
 .menu a
 {
@@ -274,13 +233,23 @@ img
     background-color: pink;
     color: #ff0157;
 }
-/* .btn1:hover ~ img
-{
-    border: 1px solid black;
-} */
+
+
+/* -------------- CONTACT---------------- */
+
 .contact
 {
     background-color: pink;
+}
+.contact_banner
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_banner_text
+{
+    text-align: center;
 }
 .contactForm
 {
@@ -296,13 +265,13 @@ img
     margin-bottom: 20px;
     font-weight: 500;
 }
-.contactForm .inputBox
+.contactForm_inputBox
 {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
 }
-.contactForm .inputBox input
+.contactForm_inputBox input
 {
     width: 100%;
     border: 1px solid #111;
@@ -310,7 +279,7 @@ img
     font-size: 16px;
     outline: none;
 }
-.contactForm .inputBox textarea
+.contactForm_inputBox textarea
 {
     width: 100%;
     border: 1px solid #111;
@@ -319,11 +288,10 @@ img
     outline: none;
     resize: none;
 }
-.contactForm .inputBox input[type="submit"]
+.contactForm_inputBox input[type="submit"]
 {
     background: #ff0157;
     color: #fff;
-    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
@@ -333,7 +301,12 @@ img
     border: none;
     cursor: pointer;
 }
-@media screen and (max-width:991px)
+.contactForm_inputBox input[type="submit"]:hover
+{
+    background-color: #111;
+}
+
+/* @media screen and (max-width:991px)
 {
     .logo
     {
@@ -445,4 +418,4 @@ img
     {
         font-size: 2.2em;
     } 
-}
+} */

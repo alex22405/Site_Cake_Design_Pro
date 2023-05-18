@@ -11,15 +11,18 @@ body
     position: relative;
     overflow-x: hidden;
 }
-.logo-div
+/* ------------- NAVBAR -------------- */
+
+.logo
 {
     position: relative;
     right: 5vw;
 }
-.logo
+.logo_img
 {
     max-height: 75px;
 }
+
 header
 {
     position: fixed;
@@ -68,24 +71,40 @@ header .navigation li a:hover
 {
     color: #ff0157;
 }
-.title
-{
-    text-align: center;
-    text-transform: uppercase;
-    font-size: xx-large;
-}
+
+/* ------------- BANNIERE -------------- */
+
 .banner
 {
-    height: 45vw;
-    color: peachpuff;
-    background: url(../img/banner_03.jpg);
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/banner_03.png);
     background-size: cover;
     background-position: bottom;
+}
+.banner_content_titleText
+{
+    color: peachpuff;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Lobster', cursive;
 
 }
-.fst-letter
+.banner_content_titleText span
 {
     color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.banner_content_btns
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .btn
 {
@@ -93,9 +112,8 @@ header .navigation li a:hover
     color: white;
     background: #ff0157;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 5px;
     margin-top: 20px;
-    font-size: large;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
@@ -105,75 +123,72 @@ header .navigation li a:hover
 .btn:hover
 {
     transition: 0.3s ease-in-out;
-    letter-spacing: 6px;
+    background-color: pink;
+    color: gray;
 }
-.menu .content
+section{
+    padding: 75px;
+}
+
+/* ----------------MENU---------------- */
+
+.menu
+{
+    margin-top: -60px;
+}
+
+.menu_content
 {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 35px;
+    margin-top: 15px;
 }
-.menu .content .box
+
+.menu_content_box
 {
     width: 340px;
     margin: 20px;
     border: 15px solid white;
     box-shadow: 0 5px 35px rgba(0,0,0,0.08);
 }
-.menu .content .box .imgBx
+.menu_content_box .imgBx
 {
     width: 100%;
-}
-.menu .content .box .text
-{
-    padding: 15px 0 5px;
-}
-.menu .content .box .text h3
-{
-    font-weight: 400;
-    color: #111;
-}
-
-.imgBx
-{
-    width: 400px;
 }
 img
 {
     width: 100%;
 }
-.title
+
+/* -------------- CONTACT---------------- */
+
+.contact
 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-color: pink;
 }
-.titleText
+.contact_banner
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_banner_title
 {
     color: #111;
-    font-size: 1em;
+    font-size: 2em;
     font-weight: 300;
+    font-family: 'Lobster', cursive;
+
 }
-.titleText span
+.contact_banner_title span
 {
     color: #ff0157;
     font-weight: 700;
     font-size: 1.5em;
 }
-.contact
+.contact_banner_text
 {
-    background-color: pink;
-}
-.contact .title h2
-{
-    padding: 50px 0 0;
-}
-.contact p
-{
-    font-size: medium;
+    text-align: center;
 }
 .contactForm
 {
@@ -189,13 +204,13 @@ img
     margin-bottom: 20px;
     font-weight: 500;
 }
-.contactForm .inputBox
+.contactForm_inputBox
 {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
 }
-.contactForm .inputBox input
+.contactForm_inputBox input
 {
     width: 100%;
     border: 1px solid #111;
@@ -203,7 +218,7 @@ img
     font-size: 16px;
     outline: none;
 }
-.contactForm .inputBox textarea
+.contactForm_inputBox textarea
 {
     width: 100%;
     border: 1px solid #111;
@@ -212,11 +227,10 @@ img
     outline: none;
     resize: none;
 }
-.contactForm .inputBox input[type="submit"]
+.contactForm_inputBox input[type="submit"]
 {
     background: #ff0157;
     color: #fff;
-    display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
@@ -226,7 +240,13 @@ img
     border: none;
     cursor: pointer;
 }
-@media screen and (max-width:991px)
+.contactForm_inputBox input[type="submit"]:hover
+{
+    background-color: #111;
+}
+
+
+/* @media screen and (max-width:991px)
 {
     header, header.sticky
     {
@@ -279,4 +299,4 @@ img
         background-position: center;
         cursor: pointer;
     }
-}
+} */
