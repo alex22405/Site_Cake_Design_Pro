@@ -78,7 +78,6 @@ header .navigation li a:hover
 
 .banner
 {
-    position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -88,11 +87,6 @@ header .navigation li a:hover
     background-size: cover;
     background-position: bottom;
 }
-.banner_content
-{
-    max-width: 900px;
-    text-align: center;
-}
 .banner_content_title
 {
     font-size: 4.7em;
@@ -100,15 +94,10 @@ header .navigation li a:hover
     color: pink;
     text-shadow: #ff0157 3px 3px 20px;
 }
-.banner_content_slogan
-{
-    position: relative;
-    top: 240px;
-}
 .banner_content_slogan_text
 {
-    font-size: 1.1em;
-    color: black;
+    text-align: center;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
@@ -306,8 +295,10 @@ img
     background-color: #111;
 }
 
-/* @media screen and (max-width:991px)
+@media screen and (max-width:991px)
 {
+    /* <!--------------- NAVBAR ----------------> */
+
     .logo
     {
         margin-left: 15%;
@@ -367,32 +358,43 @@ img
     {
         padding: 150px;
     }
-    .banner .content h2{
+
+    /* <!--------------- BANNIERE ----------------> */
+
+    .banner_content_title{
         font-size: 3em;
         color: pink;
     }
-    .row
+    .banner_content_slogan{
+        margin-top: 70px;
+    }
+    /* <!--------------- NOTRE MISSION ----------------> */
+
+    .mission
     {
         flex-direction: column;
     }
-    .row .col50{
+    .mission_div_col50{
         position: relative;
         width: 100%;
     }
-    .row .col50 .imgBx
+    .mission_div_col50 .imgBx
     {
         height: 300px;
         margin-top: 20px;
     }
-    .menu .content
+
+    /* <!--------------- MENU ----------------> */
+
+    .menu_banner
     {
         margin-top: 20px;
     }
-    .menu .content .box
+    .menu_content_box
     {
         margin: 10px;
     }
-    .menu p
+    .titleText
     {
         padding: 0;
     }
@@ -406,7 +408,10 @@ img
     margin-bottom: 15px;
     font-weight: 300;
     }
-    .contactForm{
+
+    /* <!--------------- CONTACT ----------------> */
+
+    .contact{
         padding: 35px 40px;
         margin-top: 20px;
         margin-bottom: 30px;
@@ -418,4 +423,4 @@ img
     {
         font-size: 2.2em;
     } 
-} */
+}
