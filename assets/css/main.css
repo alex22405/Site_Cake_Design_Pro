@@ -1,0 +1,716 @@
+@font-face {
+    font-family: 'Minerva Modern';
+    src: url('../fonts/minerva-modern/T-26 - Minerva Modern Regular.otf') format('opentype'); 
+}
+  
+
+:root {
+    --pastel_white: #f7f4e6;
+    --pastel_yellow: #fde1af;
+    --text_color: #000;
+    --card_border: 10px;
+    --shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  }
+  
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Minerva Modern', sans-serif;
+}
+
+/* ------------- NAVBAR -------------- */
+
+.logo
+{
+    position: relative;
+    right: 5vw;
+}
+.logo_img
+{
+    max-height: 75px;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 75px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.1px;
+    transition: 0.5s;
+    background-color: var(--pastel_white);
+}
+header.sticky
+{
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 100px;
+    z-index: 10000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+
+header .navigation
+{
+    display: flex;
+    position: relative;
+}
+header .navigation li
+{
+    position: relative;
+    list-style: none;
+    margin-left: 15px;
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: var(--text_color);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    display: inline-block;
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+header .navigation li a:hover
+{
+    transform: scale(1.11);
+}
+
+header .navigation .product_menu
+{
+    display: none;
+    list-style-type: none;
+    margin-top: 3px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
+}
+
+header .navigation .product_menu li
+{
+    float: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    background-color: var(--pastel_white);
+}
+
+header .navigation .product_menu li a
+{
+    width: 100%;
+}
+
+header.sticky .navigation .product_menu li
+{
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+header .navigation li:hover .product_menu
+{
+    display: block;
+}
+
+
+/* ------------- ACCUEIL BANNIERE -------------- */
+
+.accueil_banner
+{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/banniere.png);
+    background-size: cover;
+    background-position: bottom;
+}
+.accueil_banner_content_title
+{
+    font-size: 4.7em;
+    color: pink;
+    text-shadow: #ff0157 3px 3px 20px;
+}
+.accueil_banner_content_slogan_text
+{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+section{
+    /* padding: 75px; */
+}
+
+/* ---------------- ACCUEIL MENU ---------------- */
+
+.accueil_menu
+{
+    margin-top: var(--space);
+}
+.accueil_menu_banner .accueil_titleText
+{
+    margin-left: 30px;
+}
+.accueil_menu_content
+{
+    /* border: 1px solid #ff0157; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.accueil_menu_content_box
+{
+    /* border: 1px solid; */
+    width: 100%;
+    margin: 20px;
+    /* padding: 20px; */
+    overflow: hidden;
+    border-radius: var(--card_border);
+}
+.accueil_menu_content_box article img
+{
+    /* border: 1px solid blue; */
+    /* box-shadow: var(--shadow); */
+    transition: transform 0.8s;
+}
+
+.accueil_menu_content_box article img:hover
+{
+    transform: scale(1.05);
+}
+
+/* ------------- NOTRE MISSION -------------- */
+
+.accueil_mission_div
+{
+    margin-top: var(--space);
+    background-color: var(--pastel_white);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.accueil_mission_div_col50
+{
+    margin: auto;
+    line-height: 30px;
+    width: 50%;
+}
+.accueil_mission_img
+{
+    border-radius: var(--card_border);
+    box-shadow: var(--shadow);
+    margin-left: 130px;
+}
+
+/* ----------------COMMUN---------------- */
+/* --TITRE DES SECTIONS "MISSION & MENU"-- */
+.accueil_titleText
+{
+    color: #111;
+    font-size: 3rem;
+    font-weight: 300;
+
+}
+p
+{
+    font-weight: 300;
+    color: #111;
+}
+/* --IMG DES SECTIONS "MISSION & MENU"-- */
+.imgBx
+{
+    width: 400px;
+}
+img
+{
+    width: 100%;
+}
+/* -----------------ACCUEIL MEDIA QUERIES-------------------- */
+@media screen and (max-width:991px)
+{
+    /* <!--------------- NAVBAR ----------------> */
+
+    .logo
+    {
+        margin-left: 15%;
+    }
+    header, header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        background: linear-gradient(90deg, rgba(209,73,133,1) 0%, rgba(231,209,209,1) 100%);
+    }
+    header .navigation li
+    {
+        margin-left: 0;
+    }
+    header .navigation li a 
+    {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300t;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../img/icon-menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url(..//img/croix-icon.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    section
+    {
+        padding: 150px;
+    }
+
+    /* <!--------------- BANNIERE ----------------> */
+
+    .accueil_banner_content_title{
+        font-size: 3em;
+        color: pink;
+    }
+    .banner_content_slogan{
+        margin-top: 70px;
+    }
+    /* <!--------------- NOTRE MISSION ----------------> */
+
+    .accueil_mission
+    {
+        flex-direction: column;
+    }
+    .accueil_mission_div_col50{
+        position: relative;
+        width: 100%;
+    }
+    .accueil_mission_div_col50 .imgBx
+    {
+        height: 300px;
+        margin-top: 20px;
+    }
+
+    /* <!--------------- MENU ----------------> */
+
+    .accueil_menu_banner
+    {
+        margin-top: 20px;
+    }
+    .accueil_menu_content_box
+    {
+        margin: 10px;
+    }
+    .accueil_titleText
+    {
+        padding: 0;
+    }
+    .accueil_titleText
+    {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 300;
+    }
+}
+@media screen and (max-width: 480px) 
+{
+    .accueil_banner .content h2
+    {
+        font-size: 2.2em;
+    } 
+}
+
+/* _____________________________________________________________________________________ */
+
+
+
+
+    /* <!--------------- FOOTER ----------------> */
+
+
+footer
+{
+    text-align: center;
+    color: var(--text_color);
+    /* background: rgba(0, 0, 0, 0.8); */
+    background-color: var(--pastel_yellow);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer_container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.footer_menu
+{
+    list-style: none;
+}
+
+.footer_menu li
+{
+    margin: 1.2em;
+    text-align: center;
+}
+
+footer p
+{
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 25px;
+    margin: 0 auto;
+}
+
+.footer_menu a
+{
+    color: var(--text_color);
+    text-decoration: none;
+}
+
+/* .footer_menu a:hover
+{
+    color: black;
+} */
+
+footer .sci
+{
+    list-style: none;
+    margin: 1em;
+}
+
+.sci
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.sci li a
+{
+    text-decoration: none;
+}
+
+.sci li a i
+{
+    display: grid;
+    place-content: center;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    color: black;
+    transform: scale(0.6);
+    transition: 1s;
+} 
+
+.sci li:hover a i
+{
+    transform: scale(0.6) rotate(360deg);
+}
+
+.copyright
+{
+    color: #ccc;
+    margin-top: 50px;
+}
+
+.footer_legal a
+{
+    text-decoration: none;
+}
+
+#box2 .info
+{
+    text-align: start;
+}
+
+#box2 p span
+{
+    font-weight: bold;
+    color: black;
+}
+
+#box3 p
+{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) 
+{
+    .footer_container
+    {
+        flex-direction: column;
+    }
+    #box1
+    {
+        order: 1;
+    }   
+    #box2 
+    {
+        order: 3;
+    }
+    #box3 
+    {
+        order: 2;
+    }
+    .footer_menu
+    {
+        display: flex;
+    }
+    .sci
+    {
+        flex-direction: row;
+    }
+}
+
+
+
+/* ------------- BANNIERE -------------- */
+
+.banner
+{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner_content_titleText
+{
+    color: peachpuff;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Lobster', cursive;
+
+}
+.banner_content_titleText span
+{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.banner_content_btns
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn
+{
+    font-size: 1em;
+    color: white;
+    background: #ff0157;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    transition: 0.5s;
+} 
+.btn:hover
+{
+    transition: 0.3s ease-in-out;
+    background-color: pink;
+    color: gray;
+}
+section{
+    padding: 50px;
+}
+
+/* ----------------MENU---------------- */
+
+.menu
+{
+    margin-top: -60px;
+}
+
+.menu_content
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 15px;
+}
+
+.menu_content_box
+{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid white;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.menu_content_box .imgBx
+{
+    width: 100%;
+}
+img
+{
+    width: 100%;
+}
+
+/* -------------- CONTACT---------------- */
+
+.contact
+{
+    background-color: pink;
+}
+.contact_banner
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_banner_title
+{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: 'Lobster', cursive;
+
+}
+.contact_banner_title span
+{
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.contact_banner_text
+{
+    text-align: center;
+}
+.contactForm
+{
+    padding: 75px 50px;
+    background: pink;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.35);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactForm h3
+{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm_inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm_inputBox input
+{
+    width: 100%;
+    border: 1px solid #111;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+}
+.contactForm_inputBox textarea
+{
+    width: 100%;
+    border: 1px solid #111;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+.contactForm_inputBox input[type="submit"]
+{
+    background: #ff0157;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.contactForm_inputBox input[type="submit"]:hover
+{
+    background-color: #111;
+}
+
+
+.wedding_banner
+{
+    background: url(../img/banner_04.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.patisserie_banner
+{
+    background: url(../img/banner_02.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.boulangerie_banner
+{
+    background: url(../img/banner_03.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.birthday_banner
+{
+    background: url(../img/banner_05.png);
+    background-size: cover;
+    background-position: bottom;
+}

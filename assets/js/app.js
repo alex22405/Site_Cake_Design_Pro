@@ -9,7 +9,6 @@ window.addEventListener('scroll', function()
 /*********************************************************************************************/
 // Apparition titre et p
 const titreSpans = document.querySelectorAll('.banner_content span');
-const p = document.querySelectorAll('.banner_content_slogan span');
 
 
 window.addEventListener('load', () => {
@@ -17,7 +16,6 @@ window.addEventListener('load', () => {
     
     TL
     .staggerFrom(titreSpans, 1, {opacity: 0.2, ease: "power2.out"}, 0.4)
-    .staggerFrom(p, 1, {opacity: 0, ease: "power2.out"})
     TL.play()
 }
 ) 
@@ -26,8 +24,11 @@ window.addEventListener('load', () => {
 function toggleMenu(){
     const menuToggle = document.querySelector('.menuToggle');
     const navigation = document.querySelector('.navigation');
+    const productMenu = document.querySelector('.product_menu')
+
     menuToggle.classList.toggle('active');
     navigation.classList.toggle('active');
+    productMenu.style.display = (productMenu.style.display === "block") ? "none" : "block";
 }
 /*********************************************************************************************/
 // Apparition des fleurs

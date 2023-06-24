@@ -4,13 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/wedding.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Serif:wght@700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Document</title>
 </head>
 <body>
@@ -18,18 +12,24 @@
     <!--------------- NAVBAR ---------------->
     <header>
         <div class="logo">
-            <a href="accueil.html"><img class="logo_img" src="assets/img/logo.svg" alt=""></a>
-         </div>
+           <a href="accueil.html"><img class="logo_img" src="assets/img/logo.svg" alt=""></a>
+        </div>
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navigation">
             <li>
                 <a href="accueil.html" onclick="toggleMenu();">Accueil</a>
             </li>
             <li>
-                <a href="#about" onclick="toggleMenu();">Notre mission</a>
+                <a href="#mission" onclick="toggleMenu();">Notre mission</a>
             </li>
             <li>
-                <a href="#menu" onclick="toggleMenu();">Nos produits</a>
+                <a href="#" onclick="toggleMenu();">Nos produits</a>
+                    <ul class="product_menu">
+                        <li><a href="wedding.html">Gâteaux de mariage</a></li>
+                        <li><a href="birthday.html">Gâteaux d'anniversaire</a></li>
+                        <li><a href="patisserie.html">Pâtisseries</a></li>
+                        <li><a href="boulangerie.html">Viennoiseries</a></li>
+                    </ul>
             </li>
             <li>
                 <a href="#contact" onclick="toggleMenu();">Contact</a>
@@ -38,15 +38,11 @@
     </header>
 
     <!--------------- BANNIERE ---------------->
-    <section class="banner">
+    <section class="banner wedding_banner">
         <div class="banner_content">
             <div class="banner_content_titleText">
                 <h2><span>W</span>edding Cake</h2>
             </div>
-            <a href="birthday.html" class="btn">Anniversaire</a>
-            <a href="patisserie.html" class="btn">Pâtisserie</a>
-            <a href="boulangerie.html" class="btn">Boulangerie</a>
-        </div>
     </div>
     <!-- <div class="container">
         <img src="assets/img/flower1.png" class="flw1" alt="">
@@ -109,29 +105,39 @@
         </div>
     </section>
 
-    <!--------------- CONTACT ---------------->
-    <section class="contact" id="contact">
-        <div class="contact_banner">
-            <h2 class="contact_banner_title"><span>C</span>ontactez-nous</h2>
-            <p class="contact_banner_text">N'hésitez pas à nous contacter pour toute demande, question ou commentaire. Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
-        </div>
-        <div class="contactForm">
-            <h3>Envoyez un message</h3>
-            <div class="contactForm_inputBox">
-                <input type="text" placeholder="Nom">
-            </div>        
-            <div class="contactForm_inputBox">
-                <input type="text" placeholder="Email">
-            </div>        
-            <div class="contactForm_inputBox">
-                <textarea placeholder="Saisissez votre message"></textarea>
-            </div>
-            <div class="contactForm_inputBox">
-                <input type="submit" value="Envoyer">
-            </div>          
-        </div>
-    </section>
 
+    <footer>
+        <div class="footer_container">
+            <div id="box1">  
+                <ul class="footer_menu">
+                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="about.php">À propos</a></li>
+                    <li><a href="program.php">Planning</a></li>
+                    <li><a href="tarifs.php">Tarifs</a></li>
+                    <li><a href="partner.php">Partenaires</a></li>
+                </ul>
+            </div>
+            <div id="box2">
+                <p class="info">
+                    <i class="fa-solid fa-location-dot"></i> <span>Adresse:</span>   123 rue de Kaloum, Conakry Guinée<br/>
+                    <i class="fa-solid fa-phone"></i> <span>Téléphone:</span>   01-02-03-04-05<br/>
+                    <i class="fa-solid fa-envelope"></i> <span>Email:</span>  caritatif-projet@gmail.com<br/>
+                </p>
+                <p class="copyright">
+                    &copy; 2023 Vigon Alexandre. Tous droits réservés.
+                </p>
+                <p class="footer_legal">
+                    <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a>
+                </p>
+            </div>
+            <div id="box3">
+                <ul class="sci">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
