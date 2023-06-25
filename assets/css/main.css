@@ -241,6 +241,12 @@ header .navigation li:hover .product_menu
     justify-content: space-between;
     padding: 50px;
 }
+.accueil_titleText
+{
+    font-size: 35px;
+    font-weight: 300;
+    margin-left: 10px;
+}
 .accueil_mission_div p
 {
     text-align: justify;
@@ -272,13 +278,7 @@ header .navigation li:hover .product_menu
 
 /* ----------------COMMUN---------------- */
 /* --TITRE DES SECTIONS "MISSION & MENU"-- */
-.accueil_titleText
-{
-    color: #111;
-    font-size: 3rem;
-    font-weight: 300;
-    margin-left: 10px;
-}
+
 p
 {
     font-weight: 300;
@@ -436,8 +436,7 @@ footer
 {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    max-width: 1200px;
+    /* align-items: center; */
     margin: 0 auto;
     padding: 2em;
 }
@@ -467,21 +466,15 @@ footer p
     text-decoration: none;
 }
 
-/* .footer_menu a:hover
+footer hr
 {
-    color: black;
-} */
-
+    color: rgba(0,0,0,0.5);
+}
 footer .sci
 {
-    list-style: none;
-    margin: 1em;
-}
-
-.sci
-{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    list-style: none;
 }
 
 .sci li a
@@ -493,21 +486,15 @@ footer .sci
 {
     display: grid;
     place-content: center;
-    width: 80px;
-    height: 80px;
-    font-size: 50px;
-    background-color: aliceblue;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    background-color:  rgba(0,0,0,0.8);
     border-radius: 50%;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-    color: black;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    color: #eeeeee;
     transform: scale(0.6);
-    transition: 1s;
 } 
-
-.sci li:hover a i
-{
-    transform: scale(0.6) rotate(360deg);
-}
 
 .copyright
 {
@@ -519,7 +506,14 @@ footer .sci
 {
     text-decoration: none;
 }
-
+#box1
+{
+    width: 250px;
+}
+#box1 img
+{
+    width: 100%;
+}
 #box2 .info
 {
     text-align: start;
@@ -531,9 +525,22 @@ footer .sci
     color: black;
 }
 
-#box3 p
+
+#box3 a
 {
-    text-decoration: underline;
+    color: #000;
+}
+.footer_legal
+{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+#box1, #box2, #box3, #box4
+{
+    /* border: 1px solid; */
 }
 
 @media screen and (max-width: 992px) 
@@ -667,3 +674,5 @@ form textarea
     height: 25vh;
     resize: none;
 }
+
+
