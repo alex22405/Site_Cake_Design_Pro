@@ -10,6 +10,7 @@
     --text_color: #000;
     --card_border: 10px;
     --shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    --space: 80px;
   }
   
 *
@@ -139,25 +140,23 @@ header .navigation li:hover .product_menu
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(../img/banniere.png);
+    background: url(../img/back1.jpg);
+    /* background: #eeee; */
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 }
 .accueil_banner_content_title
 {
-    font-size: 4.7em;
-    color: pink;
-    text-shadow: #ff0157 3px 3px 20px;
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 400;
 }
 .accueil_banner_content_slogan_text
 {
     text-align: center;
     font-size: 1.3em;
     font-weight: bold;
-}
-
-section{
-    /* padding: 75px; */
 }
 
 /* ---------------- ACCUEIL MENU ---------------- */
@@ -169,21 +168,28 @@ section{
 .accueil_menu_banner .accueil_titleText
 {
     margin-left: 30px;
+    font-size: 4rem;
 }
+
+.accueil_menu_banner p
+{
+    margin-left: 40px;
+    letter-spacing: 3px;
+}
+
 .accueil_menu_content
 {
-    /* border: 1px solid #ff0157; */
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: -20px;
+    padding: 30px;
 }
 
 .accueil_menu_content_box
 {
-    /* border: 1px solid; */
+    border: 1px solid;
     width: 100%;
-    margin: 20px;
-    /* padding: 20px; */
+    margin: 10px;
     overflow: hidden;
     border-radius: var(--card_border);
 }
@@ -209,9 +215,14 @@ section{
     justify-content: space-between;
     padding: 50px;
 }
+.accueil_mission_div p
+{
+    text-align: justify;
+}
 .accueil_mission_div_col50
 {
     margin: auto;
+    margin-left: 20px;
     line-height: 30px;
     width: 50%;
 }
@@ -221,6 +232,17 @@ section{
     box-shadow: var(--shadow);
     margin-left: 130px;
 }
+/* .animated-element {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .animated-element.is-visible {
+    opacity: 1;
+    transform: translateX(100px);
+  } */
+  
 
 /* ----------------COMMUN---------------- */
 /* --TITRE DES SECTIONS "MISSION & MENU"-- */
@@ -377,8 +399,8 @@ footer
 {
     text-align: center;
     color: var(--text_color);
-    /* background: rgba(0, 0, 0, 0.8); */
-    background-color: var(--pastel_yellow);
+    background-color: #ebdbbe;
+    /* background-position: bottom; */
     position: relative;
     overflow: hidden;
 }
@@ -567,8 +589,10 @@ footer .sci
     background-color: pink;
     color: gray;
 }
-section{
+.menu
+{
     padding: 50px;
+    /* margin-bottom: 80px; */
 }
 
 /* ----------------MENU---------------- */
@@ -714,3 +738,4 @@ img
     background-size: cover;
     background-position: bottom;
 }
+  
