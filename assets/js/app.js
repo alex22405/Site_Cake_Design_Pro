@@ -15,7 +15,19 @@ window.addEventListener('load', () => {
     const TL = gsap.timeline({paused:  true});
     
     TL
-    .staggerFrom(titreSpans, 4, {opacity: 0.2, ease: "power2.out"}, 0.4)
+    .staggerFrom(titreSpans, 5, {opacity: 0.1, ease: "power2.out"}, 0.4)
+    TL.play()
+}
+)
+
+const titreSpans2 = document.querySelectorAll('.banner_content_titleText span');
+
+
+window.addEventListener('load', () => {
+    const TL = gsap.timeline({paused:  true});
+    
+    TL
+    .staggerFrom(titreSpans2, 4, {opacity: 0.1, ease: "power2.out"}, 0.1)
     TL.play()
 }
 ) 
@@ -24,33 +36,12 @@ window.addEventListener('load', () => {
 function toggleMenu(){
     const menuToggle = document.querySelector('.menuToggle');
     const navigation = document.querySelector('.navigation');
-    const productMenu = document.querySelector('.product_menu')
 
     menuToggle.classList.toggle('active');
     navigation.classList.toggle('active');
-    productMenu.style.display = (productMenu.style.display === "block") ? "none" : "block";
 }
 /*********************************************************************************************/
-// Apparition au scroll
-// Sélectionnez tous les éléments à animer
-const animatedElements = document.querySelectorAll('.animated-element');
 
-// Fonction de gestion de l'événement de défilement
-function handleScroll() {
-  animatedElements.forEach((element) => {
-    // Vérifiez si l'élément est visible à l'écran
-    const elementTop = element.getBoundingClientRect().top;
-    const elementBottom = element.getBoundingClientRect().bottom;
-
-    if (elementTop < window.innerHeight && elementBottom >= 0) {
-      // Ajoutez la classe 'is-visible' lorsque l'élément est visible
-      element.classList.add('is-visible');
-    }
-  });
-}
-
-// Écoutez l'événement de défilement et appelez la fonction de gestion correspondante
-window.addEventListener('scroll', handleScroll);
 // **********************************************************************************************
 
 // Apparition des fleurs

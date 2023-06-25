@@ -20,7 +20,7 @@
                 <a href="accueil.html" onclick="toggleMenu();">Accueil</a>
             </li>
             <li>
-                <a href="#mission" onclick="toggleMenu();">À propos</a>
+                <a href="accueil.html#about" onclick="toggleMenu();">À propos</a>
             </li>
             <li>
                 <a href="#" onclick="toggleMenu();">Nos produits</a>
@@ -32,7 +32,7 @@
                     </ul>
             </li>
             <li>
-                <a href="#contact" onclick="toggleMenu();">Contact</a>
+                <a href="contact.html" onclick="toggleMenu();">Contact</a>
             </li>
         </ul>
     </header>
@@ -40,8 +40,8 @@
     <!--------------- BANNIERE ---------------->
     <div class="banner patisserie_banner">
         <div class="banner_content">
-            <div class="banner_content_titleText">
-                <h2><span>P</span>âtisserie</h2>
+            <div>
+                <h2 class="banner_content_titleText"><span>P</span><span>Â</span><span>T</span><span>I</span><span>S</span><span>S</span><span>E</span><span>R</span><span>I</span><span>E</span><span>S</span></h2>
             </div>
         </div>
     </div>
@@ -49,24 +49,20 @@
     <!--------------- MENU ---------------->
     <section class="menu" id="menu">
         <div class="menu_content">
-            <div class="menu_content_box">
-                <figure class="imgBx">
-                    <img src="assets/img/patisserie_01.png" alt="">
-                    <figcaption>Lorem</figcaption>
-                </figure>
-            </div>
-            <div class="menu_content_box">
-                <figure class="imgBx">
-                    <img src="assets/img/patisserie_01.png" alt="">
-                    <figcaption>Lorem</figcaption>
-                </figure>
-            </div>
-            <div class="menu_content_box">
-                <figure class="imgBx">
-                    <img src="assets/img/patisserie_01.png" alt="">
-                    <figcaption>Lorem</figcaption>
-                </figure>
-            </div>
+            <!-- <div class="menu_content_box"> -->
+                <div class="menu_content_wrapper">
+                    <div class="menu_content_box">
+                        <article>
+                            <img src="assets/img/patisserie_01.png" alt="">
+                        </article>
+                    </div>
+                    <div>
+                        <h3>MACARONS</h3>
+                    </div>
+                    <p>
+                        Description
+                    </p>
+                </div>
         </div>
     </section>
 
