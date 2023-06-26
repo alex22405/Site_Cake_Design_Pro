@@ -1,12 +1,13 @@
 @font-face {
     font-family: 'Minerva Modern';
-    src: url('../fonts/minerva-modern/T-26 - Minerva Modern Regular.otf') format('opentype'); 
+    src: url('../fonts/minerva-modern/T-26 - Minerva Modern Regular.otf') format('opentype');
 }
+
 @font-face {
     font-family: 'Fira Sans';
     src: url('../fonts/Fira_Sans/FiraSans-Thin.ttf') format('opentype');
 }
-  
+
 
 :root {
     --pastel_white: #f7f4e6;
@@ -15,16 +16,15 @@
     --card_border: 10px;
     --shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
     --space: 80px;
-  }
-  
-*
-{
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body
-{
+
+body {
     position: relative;
     overflow-x: hidden;
     font-family: 'Minerva Modern', sans-serif;
@@ -32,18 +32,16 @@ body
 
 /* ------------- NAVBAR -------------- */
 
-.logo
-{
+.logo {
     position: relative;
     right: 5vw;
 }
-.logo_img
-{
+
+.logo_img {
     max-height: 75px;
 }
 
-header
-{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -59,28 +57,27 @@ header
     transition: 0.5s;
     background-color: var(--pastel_white);
 }
-header.sticky
-{
+
+header.sticky {
     background: rgba(255, 255, 255, 0.9);
     padding: 10px 100px;
     z-index: 10000;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 
-header .navigation
-{
+header .navigation {
     display: flex;
     position: relative;
 }
-header .navigation li
-{
+
+header .navigation li {
     position: relative;
     list-style: none;
     margin-left: 15px;
 }
-header .navigation li a
-{
+
+header .navigation li a {
     text-decoration: none;
     color: var(--text_color);
     padding: 10px;
@@ -92,13 +89,11 @@ header .navigation li a
     transition-duration: 0.5s;
 }
 
-header .navigation li a:hover
-{
+header .navigation li a:hover {
     transform: scale(1.11);
 }
 
-header .navigation .product_menu
-{
+header .navigation .product_menu {
     display: none;
     list-style-type: none;
     margin-top: 3px;
@@ -109,8 +104,7 @@ header .navigation .product_menu
     overflow: hidden;
 }
 
-header .navigation .product_menu li
-{
+header .navigation .product_menu li {
     float: none;
     list-style-type: none;
     margin: 0;
@@ -118,27 +112,23 @@ header .navigation .product_menu li
     background-color: var(--pastel_white);
 }
 
-header .navigation .product_menu li a
-{
+header .navigation .product_menu li a {
     width: 100%;
 }
 
-header.sticky .navigation .product_menu li
-{
+header.sticky .navigation .product_menu li {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
 
-header .navigation li:hover .product_menu
-{
+header .navigation li:hover .product_menu {
     display: block;
 }
 
 
 /* ------------- ACCUEIL BANNIERE -------------- */
 
-.accueil_banner
-{
+.accueil_banner {
     width: 100%;
     min-height: 90vh;
     display: flex;
@@ -148,15 +138,15 @@ header .navigation li:hover .product_menu
     background-size: cover;
     background-position: center;
 }
-.accueil_banner_content_title
-{
+
+.accueil_banner_content_title {
     font-size: 5em;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: 400;
 }
-.accueil_banner_content_slogan_text
-{
+
+.accueil_banner_content_slogan_text {
     text-align: center;
     font-size: 1.3em;
     font-family: 'Fira Sans';
@@ -165,16 +155,15 @@ header .navigation li:hover .product_menu
 
 /* ------------- BANNIERE -------------- */
 
-.banner
-{
+.banner {
     width: 100%;
     min-height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.banner_content_titleText
-{
+
+.banner_content_titleText {
     font-size: 5em;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -184,29 +173,25 @@ header .navigation li:hover .product_menu
 
 
 /* ----------------- ALL BANNERS BACKGROUND --------------------- */
-.wedding_banner
-{
+.wedding_banner {
     background: url(../img/banner_04.png);
     background-size: cover;
     background-position: center;
 }
 
-.patisserie_banner
-{
+.patisserie_banner {
     background: url(../img/banner_02.jpg);
     background-size: cover;
     background-position: top;
 }
 
-.boulangerie_banner
-{
+.boulangerie_banner {
     background: url(../img/banner_03.jpg);
     background-size: cover;
     background-position: center;
 }
 
-.birthday_banner
-{
+.birthday_banner {
     background: url(../img/banner_05.png);
     background-size: cover;
     background-position: bottom;
@@ -214,47 +199,41 @@ header .navigation li:hover .product_menu
 
 /* ---------------- MENUS ---------------- */
 
-.menu
-{
+.menu {
     margin-top: var(--space);
 }
-.menu_banner .accueil_titleText
-{
+
+.menu_banner .accueil_titleText {
     margin-left: 30px;
     font-size: 3.5rem;
 }
 
-.menu_banner p
-{
+.menu_banner p {
     margin-left: 40px;
     letter-spacing: 3px;
 }
 
-.menu_description
-{
+.menu_description {
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 60%;
 }
 
-.menu_description h1
-{
+.menu_description h1 {
     padding: 10px;
     text-transform: uppercase;
     font-size: 50px;
     text-align: center;
 }
 
-.menu_description p
-{
+.menu_description p {
     font-family: 'Fira Sans';
     text-align: center;
 }
 
 
-.menu_content
-{
+.menu_content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
@@ -262,223 +241,207 @@ header .navigation li:hover .product_menu
     margin-bottom: 50px;
 }
 
-.menu_content_wrapper
-{
+.menu_content_wrapper {
     margin: 10px;
 }
-.menu_content_wrapper h3, p
-{
+
+.menu_content_wrapper h3,
+p {
     margin-left: 10px;
 }
-.menu_content_wrapper h3
-{
+
+.menu_content_wrapper h3 {
     font-size: 1.7em;
     text-transform: uppercase;
     font-weight: 400;
     margin-top: 22px;
 }
-.menu_content_wrapper p
-{
+
+.menu_content_wrapper p {
     margin-top: 7px;
     font-family: 'Fira Sans';
     font-weight: bold;
 }
 
 
-.menu_content_box
-{
+.menu_content_box {
     display: flex;
     width: 100%;
     margin: 10px;
     overflow: hidden;
     border-radius: var(--card_border);
 }
-.menu_content_box article img
-{
+
+.menu_content_box article img {
     height: 100%;
     transition: transform 0.8s;
 }
-.menu_content_box article img:hover
-{
+
+.menu_content_box article img:hover {
     transform: scale(1.05);
 }
 
 /* ------------- NOTRE MISSION et VALEURS -------------- */
 
-.accueil_mission_div
-{
+.accueil_mission_div {
     /* margin-top: var(--space); */
     display: flex;
     justify-content: space-between;
     padding: 50px;
 }
-#mission_div
-{
+
+#mission_div {
     background-color: var(--pastel_white);
 }
-.accueil_titleText
-{
+
+.accueil_titleText {
     font-size: 35px;
     font-weight: 300;
     margin-left: 10px;
 }
-.accueil_mission_div p
-{
+
+.accueil_mission_div p {
     text-align: justify;
 }
-.accueil_mission_div_col50
-{
+
+.accueil_mission_div_col50 {
     margin: auto;
     margin-left: 20px;
     line-height: 30px;
     width: 50%;
 }
-.accueil_mission_img
-{
+
+.accueil_mission_img {
     border-radius: var(--card_border);
     box-shadow: var(--shadow);
     margin-left: 130px;
 }
 
-.accueil_mission_img2
-{
+.accueil_mission_img2 {
     border-radius: var(--card_border);
     box-shadow: var(--shadow);
     margin-left: 130px;
 }
-  
 
 /* ----------------COMMUN---------------- */
 /* --TITRE DES SECTIONS "MISSION & MENU"-- */
 
-p
-{
+p {
     font-weight: 300;
     color: #111;
 }
+
 /* --IMG DES SECTIONS "MISSION & MENU"-- */
-.imgBx
-{
+.imgBx {
     width: 400px;
 }
-img
-{
+
+img {
     width: 100%;
 }
 
 /* <!--------------- FOOTER ----------------> */
 
 
-footer
-{
+footer {
     text-align: center;
     color: var(--text_color);
     background-color: #ebdbbe;
-    /* background-position: bottom; */
     position: relative;
-    overflow: hidden;
 }
 
-.footer_container
-{
+.footer_container {
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
-    margin: 0 auto;
+    align-items: flex-start;
     padding: 2em;
 }
 
-.footer_menu
-{
+.footer_menu {
     list-style: none;
 }
 
-.footer_menu li
-{
+.footer_menu li {
     margin: 1.2em;
     text-align: center;
 }
 
-footer p
-{
+footer p {
     max-width: 25em;
     font-size: 0.9em;
     line-height: 25px;
     margin: 0 auto;
 }
 
-.footer_menu a
-{
+.footer_menu a {
     color: var(--text_color);
     text-decoration: none;
 }
 
-footer hr
-{
-    color: rgba(0,0,0,0.5);
+footer hr {
+    color: rgba(0, 0, 0, 0.5);
 }
-footer .sci
-{
+
+footer .sci {
     display: flex;
     /* flex-direction: column; */
     list-style: none;
 }
 
-.sci li a
-{
+.sci li a {
     text-decoration: none;
 }
 
-.sci li a i
-{
+.sci li a i {
     display: grid;
     place-content: center;
     width: 60px;
     height: 60px;
     font-size: 35px;
-    background-color:  rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 50%;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     color: #eeeeee;
     transform: scale(0.6);
-} 
-
-.copyright
-{
-    color: #ccc;
-    margin-top: 50px;
 }
 
-.footer_legal a
-{
+.footer_legal a {
     text-decoration: none;
 }
-#box1
-{
-    width: 250px;
+
+#box1 {
+    width: 300px;
 }
-#box1 img
-{
-    width: 100%;
+
+#box1 img {
+    width: 70%;
 }
-#box2 .info
-{
+
+#box1 .copyright {
+    display: block;
+    margin-top: 10px;
+}
+
+#box1 .developed_by,
+a {
+    color: gray;
+}
+
+#box2 .info {
     text-align: start;
 }
 
-#box2 p span
-{
+#box2 p span {
     font-weight: bold;
     color: black;
 }
 
 
-#box3 a
-{
+#box3 a {
     color: #000;
 }
-.footer_legal
-{
+
+.footer_legal {
     text-align: start;
     display: flex;
     flex-direction: column;
@@ -486,52 +449,50 @@ footer .sci
 }
 
 
-@media screen and (max-width: 992px) 
-{
-    .footer_container
-    {
+@media screen and (max-width: 992px) {
+    .footer_container {
         flex-direction: column;
     }
-    #box1
-    {
+
+    #box1 {
         order: 1;
-    }   
-    #box2 
-    {
+    }
+
+    #box2 {
         order: 3;
     }
-    #box3 
-    {
+
+    #box3 {
         order: 2;
     }
-    .footer_menu
-    {
+
+    .footer_menu {
         display: flex;
     }
-    .sci
-    {
+
+    .sci {
         flex-direction: row;
     }
 }
+
 /* -----------------ACCUEIL MEDIA QUERIES-------------------- */
-@media screen and (max-width:991px)
-{
+@media screen and (max-width:991px) {
     /* <!--------------- NAVBAR ----------------> */
 
-    .logo
-    {
+    .logo {
         margin-left: 15%;
     }
-    header, header.sticky
-    {
+
+    header,
+    header.sticky {
         padding: 10px 20px;
     }
-    header .navigation
-    {
+
+    header .navigation {
         display: none;
     }
-    header .navigation.active
-    {
+
+    header .navigation.active {
         width: 100%;
         height: calc(100% - 68px);
         position: fixed;
@@ -541,21 +502,21 @@ footer .sci
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        background: linear-gradient(90deg, rgba(209,73,133,1) 0%, rgba(231,209,209,1) 100%);
+        background: linear-gradient(90deg, rgba(209, 73, 133, 1) 0%, rgba(231, 209, 209, 1) 100%);
     }
-    header .navigation li
-    {
+
+    header .navigation li {
         margin-left: 0;
     }
-    header .navigation li a 
-    {
+
+    header .navigation li a {
         text-decoration: none;
         color: #111;
         font-size: 1.6em;
         font-weight: 300t;
     }
-    .menuToggle
-    {
+
+    .menuToggle {
         position: relative;
         width: 40px;
         height: 40px;
@@ -565,40 +526,42 @@ footer .sci
         background-position: center;
         cursor: pointer;
     }
-    .menuToggle.active
-    {
+
+    .menuToggle.active {
         background: url(..//img/croix-icon.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
     }
-    section
-    {
+
+    section {
         padding: 150px;
     }
 
     /* <!--------------- BANNIERE ----------------> */
 
-    .accueil_banner_content_title{
+    .accueil_banner_content_title {
         font-size: 3em;
         color: pink;
     }
-    .banner_content_slogan{
+
+    .banner_content_slogan {
         margin-top: 70px;
     }
+
     /* <!--------------- NOTRE MISSION ----------------> */
 
-    .accueil_mission
-    {
+    .accueil_mission {
         flex-direction: column;
     }
-    .accueil_mission_div_col50{
+
+    .accueil_mission_div_col50 {
         position: relative;
         width: 100%;
     }
-    .accueil_mission_div_col50 .imgBx
-    {
+
+    .accueil_mission_div_col50 .imgBx {
         height: 300px;
         margin-top: 20px;
     }
@@ -606,32 +569,30 @@ footer .sci
 
     /* <!--------------- MENU ----------------> */
 
-    .menu_banner
-    {
+    .menu_banner {
         margin-top: 20px;
     }
-    .menu_content_box
-    {
+
+    .menu_content_box {
         margin: 10px;
     }
-    .accueil_titleText
-    {
+
+    .accueil_titleText {
         padding: 0;
     }
-    .accueil_titleText
-    {
-    font-size: 1.8em;
-    line-height: 1.5em;
-    margin-bottom: 15px;
-    font-weight: 300;
+
+    .accueil_titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
     }
 }
-@media screen and (max-width: 480px) 
-{
-    .accueil_banner .content h2
-    {
+
+@media screen and (max-width: 480px) {
+    .accueil_banner .content h2 {
         font-size: 2.2em;
-    } 
+    }
 }
 
 /* _____________________________________________________________________________________ */
@@ -639,23 +600,23 @@ footer .sci
 
 /* -------------- CONTACT---------------- */
 
-.contact
-{
+.contact {
     margin-top: 20px;
 }
-.contact h1
-{
+
+.contact h1 {
     font-weight: bolder;
     text-transform: uppercase;
 }
-.contact p, h1
-{
+
+.contact p,
+h1 {
     margin-right: 50px;
     margin-left: 50px;
     font-family: 'Fira Sans';
 }
-.contact_form
-{
+
+.contact_form {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -664,17 +625,21 @@ footer .sci
     padding: 50px;
     font-family: 'Fira Sans';
 }
-form
-{
+
+form {
     max-width: 600px;
 }
-form h2, input, textarea, button
-{
+
+form h2,
+input,
+textarea,
+.contact_button {
     margin: 10px;
     padding: 10px;
 }
-form input, textarea
-{
+
+form input,
+textarea {
     width: 100%;
     border-bottom: 1px solid lightgray;
     border: 1px solid lightgray;
@@ -683,10 +648,51 @@ form input, textarea
     font-weight: bolder;
 }
 
-form textarea
-{
+form textarea {
     height: 25vh;
     resize: none;
 }
 
+.contact_button {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background: var(--pastel_white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    border: none;
+}
 
+.contact_button:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+
+.contact_button:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+
+.contact_button:active {
+    top: 2px;
+}

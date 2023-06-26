@@ -1,7 +1,6 @@
 /*********************************************************************************************/
 // Effet scroll nav
-window.addEventListener('scroll', function()
-{
+window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
     header.classList.toggle("sticky", window.scrollY > 0)
 }
@@ -12,10 +11,10 @@ const titreSpans = document.querySelectorAll('.accueil_banner_content span');
 
 
 window.addEventListener('load', () => {
-    const TL = gsap.timeline({paused:  true});
-    
+    const TL = gsap.timeline({ paused: true });
+
     TL
-    .staggerFrom(titreSpans, 5, {opacity: 0.1, ease: "power2.out"}, 0.4)
+        .staggerFrom(titreSpans, 5, { opacity: 0.1, ease: "power2.out" }, 0.4)
     TL.play()
 }
 )
@@ -24,16 +23,16 @@ const titreSpans2 = document.querySelectorAll('.banner_content_titleText span');
 
 
 window.addEventListener('load', () => {
-    const TL = gsap.timeline({paused:  true});
-    
+    const TL = gsap.timeline({ paused: true });
+
     TL
-    .staggerFrom(titreSpans2, 4, {opacity: 0.1, ease: "power2.out"}, 0.1)
+        .staggerFrom(titreSpans2, 4, { opacity: 0.1, ease: "power2.out" }, 0.1)
     TL.play()
 }
-) 
+)
 /*********************************************************************************************/
 // Responsive menu toggle
-function toggleMenu(){
+function toggleMenu() {
     const menuToggle = document.querySelector('.menuToggle');
     const navigation = document.querySelector('.navigation');
 
@@ -44,37 +43,37 @@ function toggleMenu(){
 
 const sr = ScrollReveal();
 
-sr.reveal('.logo',{
+sr.reveal('.logo', {
     origin: 'top',
     distance: '30px',
     duration: 4000,
 });
 
-sr.reveal('.navigation',{
+sr.reveal('.navigation', {
     origin: 'top',
     distance: '30px',
     duration: 4000
 });
 
-sr.reveal('.accueil_menu_name',{
+sr.reveal('.accueil_menu_name', {
     origin: 'left',
     distance: '50px',
     duration: 2000,
 });
 
-sr.reveal('.accueil_titleText',{
+sr.reveal('.accueil_titleText', {
     origin: 'left',
     distance: '50px',
     duration: 2000,
 });
 
-sr.reveal('.menu_description',{
+sr.reveal('.menu_description', {
     origin: 'top',
     distance: '50px',
     duration: 4000
 });
 
-sr.reveal('.menu_content_wrapper',{
+sr.reveal('.menu_content_wrapper', {
     origin: 'bottom',
     distance: '50px',
     duration: 2000,
@@ -82,33 +81,33 @@ sr.reveal('.menu_content_wrapper',{
 }, 50);
 
 
-sr.reveal('#mission_appear',{
+sr.reveal('#mission_appear', {
     origin: 'right',
     distance: '50px',
     duration: 3000,
     delay: 1000
 });
 
-sr.reveal('#valeurs_appear',{
+sr.reveal('#valeurs_appear', {
     origin: 'left',
     distance: '50px',
     duration: 3000,
     delay: 1000
 });
 
-sr.reveal('.accueil_mission_text',{
+sr.reveal('.accueil_mission_text', {
     origin: 'bottom',
     distance: '50px',
     duration: 3000,
 });
 
-sr.reveal('.contact_text',{
+sr.reveal('.contact_text', {
     origin: 'left',
     distance: '50px',
     duration: 4000,
 });
 
-sr.reveal('.contact_form',{
+sr.reveal('.contact_form', {
     origin: 'right',
     distance: '50px',
     duration: 4000,
