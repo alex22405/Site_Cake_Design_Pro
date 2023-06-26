@@ -81,24 +81,25 @@ sr.reveal('.menu_content_wrapper',{
     delay: 500
 }, 50);
 
-sr.reveal('.accueil_mission_text',{
-    origin: 'bottom',
-    distance: '50px',
-    duration: 3000,
-});
 
-sr.reveal('.accueil_mission_img',{
+sr.reveal('#mission_appear',{
     origin: 'right',
     distance: '50px',
     duration: 3000,
     delay: 1000
 });
 
-sr.reveal('.accueil_mission_img2',{
+sr.reveal('#valeurs_appear',{
     origin: 'left',
     distance: '50px',
     duration: 3000,
     delay: 1000
+});
+
+sr.reveal('.accueil_mission_text',{
+    origin: 'bottom',
+    distance: '50px',
+    duration: 3000,
 });
 
 sr.reveal('.contact_text',{

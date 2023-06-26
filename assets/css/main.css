@@ -163,6 +163,55 @@ header .navigation li:hover .product_menu
     font-weight: 900;
 }
 
+/* ------------- BANNIERE -------------- */
+
+.banner
+{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner_content_titleText
+{
+    font-size: 5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+
+
+/* ----------------- ALL BANNERS BACKGROUND --------------------- */
+.wedding_banner
+{
+    background: url(../img/banner_04.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.patisserie_banner
+{
+    background: url(../img/banner_02.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.boulangerie_banner
+{
+    background: url(../img/banner_03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.birthday_banner
+{
+    background: url(../img/banner_05.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
 /* ---------------- MENUS ---------------- */
 
 .menu
@@ -254,22 +303,18 @@ header .navigation li:hover .product_menu
     transform: scale(1.05);
 }
 
-/* ------------- NOTRE MISSION -------------- */
+/* ------------- NOTRE MISSION et VALEURS -------------- */
 
 .accueil_mission_div
 {
-    margin-top: var(--space);
-    background-color: var(--pastel_white);
+    /* margin-top: var(--space); */
     display: flex;
     justify-content: space-between;
     padding: 50px;
 }
-.accueil_mission_div2
+#mission_div
 {
-    /* background-color: var(--pastel_white); */
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
+    background-color: var(--pastel_white);
 }
 .accueil_titleText
 {
@@ -319,6 +364,154 @@ p
 img
 {
     width: 100%;
+}
+
+/* <!--------------- FOOTER ----------------> */
+
+
+footer
+{
+    text-align: center;
+    color: var(--text_color);
+    background-color: #ebdbbe;
+    /* background-position: bottom; */
+    position: relative;
+    overflow: hidden;
+}
+
+.footer_container
+{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.footer_menu
+{
+    list-style: none;
+}
+
+.footer_menu li
+{
+    margin: 1.2em;
+    text-align: center;
+}
+
+footer p
+{
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 25px;
+    margin: 0 auto;
+}
+
+.footer_menu a
+{
+    color: var(--text_color);
+    text-decoration: none;
+}
+
+footer hr
+{
+    color: rgba(0,0,0,0.5);
+}
+footer .sci
+{
+    display: flex;
+    /* flex-direction: column; */
+    list-style: none;
+}
+
+.sci li a
+{
+    text-decoration: none;
+}
+
+.sci li a i
+{
+    display: grid;
+    place-content: center;
+    width: 60px;
+    height: 60px;
+    font-size: 35px;
+    background-color:  rgba(0,0,0,0.8);
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    color: #eeeeee;
+    transform: scale(0.6);
+} 
+
+.copyright
+{
+    color: #ccc;
+    margin-top: 50px;
+}
+
+.footer_legal a
+{
+    text-decoration: none;
+}
+#box1
+{
+    width: 250px;
+}
+#box1 img
+{
+    width: 100%;
+}
+#box2 .info
+{
+    text-align: start;
+}
+
+#box2 p span
+{
+    font-weight: bold;
+    color: black;
+}
+
+
+#box3 a
+{
+    color: #000;
+}
+.footer_legal
+{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+
+@media screen and (max-width: 992px) 
+{
+    .footer_container
+    {
+        flex-direction: column;
+    }
+    #box1
+    {
+        order: 1;
+    }   
+    #box2 
+    {
+        order: 3;
+    }
+    #box3 
+    {
+        order: 2;
+    }
+    .footer_menu
+    {
+        display: flex;
+    }
+    .sci
+    {
+        flex-direction: row;
+    }
 }
 /* -----------------ACCUEIL MEDIA QUERIES-------------------- */
 @media screen and (max-width:991px)
@@ -442,212 +635,6 @@ img
 }
 
 /* _____________________________________________________________________________________ */
-
-
-
-
-    /* <!--------------- FOOTER ----------------> */
-
-
-footer
-{
-    text-align: center;
-    color: var(--text_color);
-    background-color: #ebdbbe;
-    /* background-position: bottom; */
-    position: relative;
-    overflow: hidden;
-}
-
-.footer_container
-{
-    display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
-    margin: 0 auto;
-    padding: 2em;
-}
-
-.footer_menu
-{
-    list-style: none;
-}
-
-.footer_menu li
-{
-    margin: 1.2em;
-    text-align: center;
-}
-
-footer p
-{
-    max-width: 25em;
-    font-size: 0.9em;
-    line-height: 25px;
-    margin: 0 auto;
-}
-
-.footer_menu a
-{
-    color: var(--text_color);
-    text-decoration: none;
-}
-
-footer hr
-{
-    color: rgba(0,0,0,0.5);
-}
-footer .sci
-{
-    display: flex;
-    /* flex-direction: column; */
-    list-style: none;
-}
-
-.sci li a
-{
-    text-decoration: none;
-}
-
-.sci li a i
-{
-    display: grid;
-    place-content: center;
-    width: 60px;
-    height: 60px;
-    font-size: 35px;
-    background-color:  rgba(0,0,0,0.8);
-    border-radius: 50%;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-    color: #eeeeee;
-    transform: scale(0.6);
-} 
-
-.copyright
-{
-    color: #ccc;
-    margin-top: 50px;
-}
-
-.footer_legal a
-{
-    text-decoration: none;
-}
-#box1
-{
-    width: 250px;
-}
-#box1 img
-{
-    width: 100%;
-}
-#box2 .info
-{
-    text-align: start;
-}
-
-#box2 p span
-{
-    font-weight: bold;
-    color: black;
-}
-
-
-#box3 a
-{
-    color: #000;
-}
-.footer_legal
-{
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    line-height: 40px;
-}
-
-#box1, #box2, #box3, #box4
-{
-    /* border: 1px solid; */
-}
-
-@media screen and (max-width: 992px) 
-{
-    .footer_container
-    {
-        flex-direction: column;
-    }
-    #box1
-    {
-        order: 1;
-    }   
-    #box2 
-    {
-        order: 3;
-    }
-    #box3 
-    {
-        order: 2;
-    }
-    .footer_menu
-    {
-        display: flex;
-    }
-    .sci
-    {
-        flex-direction: row;
-    }
-}
-
-
-
-/* ------------- BANNIERE -------------- */
-
-.banner
-{
-    width: 100%;
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.banner_content_titleText
-{
-    font-size: 5em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-weight: 400;
-}
-
-
-
-/* ----------------- ALL BANNERS --------------------- */
-.wedding_banner
-{
-    background: url(../img/banner_04.png);
-    background-size: cover;
-    background-position: center;
-}
-
-.patisserie_banner
-{
-    background: url(../img/banner_02.jpg);
-    background-size: cover;
-    background-position: top;
-}
-
-.boulangerie_banner
-{
-    background: url(../img/banner_03.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.birthday_banner
-{
-    background: url(../img/banner_05.png);
-    background-size: cover;
-    background-position: bottom;
-}
 
 
 /* -------------- CONTACT---------------- */
