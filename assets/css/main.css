@@ -181,6 +181,29 @@ header .navigation li:hover .product_menu
     letter-spacing: 3px;
 }
 
+.menu_description
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+}
+
+.menu_description h1
+{
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+}
+
+.menu_description p
+{
+    font-family: 'Fira Sans';
+    text-align: center;
+}
+
+
 .menu_content
 {
     display: grid;
@@ -241,6 +264,13 @@ header .navigation li:hover .product_menu
     justify-content: space-between;
     padding: 50px;
 }
+.accueil_mission_div2
+{
+    /* background-color: var(--pastel_white); */
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
 .accueil_titleText
 {
     font-size: 35px;
@@ -264,16 +294,13 @@ header .navigation li:hover .product_menu
     box-shadow: var(--shadow);
     margin-left: 130px;
 }
-/* .animated-element {
-    opacity: 0;
-    transform: translateX(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .animated-element.is-visible {
-    opacity: 1;
-    transform: translateX(100px);
-  } */
+
+.accueil_mission_img2
+{
+    border-radius: var(--card_border);
+    box-shadow: var(--shadow);
+    margin-left: 130px;
+}
   
 
 /* ----------------COMMUN---------------- */

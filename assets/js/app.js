@@ -42,6 +42,87 @@ function toggleMenu(){
 }
 /*********************************************************************************************/
 
+const sr = ScrollReveal();
+
+sr.reveal('.logo',{
+    origin: 'top',
+    distance: '30px',
+    duration: 4000,
+});
+
+sr.reveal('.navigation',{
+    origin: 'top',
+    distance: '30px',
+    duration: 4000
+});
+
+sr.reveal('.accueil_menu_name',{
+    origin: 'left',
+    distance: '50px',
+    duration: 2000,
+});
+
+sr.reveal('.accueil_titleText',{
+    origin: 'left',
+    distance: '50px',
+    duration: 2000,
+});
+
+sr.reveal('.menu_description',{
+    origin: 'top',
+    distance: '50px',
+    duration: 4000
+});
+
+sr.reveal('.menu_content_wrapper',{
+    origin: 'bottom',
+    distance: '50px',
+    duration: 2000,
+    delay: 500
+}, 50);
+
+sr.reveal('.accueil_mission_text',{
+    origin: 'bottom',
+    distance: '50px',
+    duration: 3000,
+});
+
+sr.reveal('.accueil_mission_img',{
+    origin: 'right',
+    distance: '50px',
+    duration: 3000,
+    delay: 1000
+});
+
+sr.reveal('.accueil_mission_img2',{
+    origin: 'left',
+    distance: '50px',
+    duration: 3000,
+    delay: 1000
+});
+
+sr.reveal('.contact_text',{
+    origin: 'left',
+    distance: '50px',
+    duration: 4000,
+});
+
+sr.reveal('.contact_form',{
+    origin: 'right',
+    distance: '50px',
+    duration: 4000,
+    delay: 1000
+});
+
+// sr.reveal('.footer_container',{
+//     origin: 'bottom',
+//     distance: '50px',
+//     duration: 4000,
+// });
+
+
+
+
 // **********************************************************************************************
 
 // Apparition des fleurs
